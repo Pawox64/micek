@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zespół Szkół Numer 1 Lepsza Strona.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            user-select: none;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #cccccc;
+            position: fixed;
+            top: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.5s ease-in-out;
+        }
+        .btn {
+            background-color: #808080;
+            color: rgb(0, 0, 0);
+            width: 300px;
+            height: 300px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 22px;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.1s ease-in-out, width 0.1s ease-in-out, height 0.1s ease-in-out;
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+        @media (max-width: 950px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+                align-items: center;
+            }
+            .btn {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Zespół szkół Numer 1 Lubliniec</h1>
+    <div class="container">
+        <a href="https://mickiewicz.net.pl/planlekcji/2025-02-03/index.html" class="btn" draggable="false">Plan lekcji</a>
+        <a href="https://uczen.eduvulcan.pl/powiatlubliniecki/App" class="btn" draggable="false">Dziennik</a>
+        <a href="https://mickiewicz.net.pl/am/index.php/zastepstwa/" class="btn" draggable="false">Zastępstwa</a>
+    </div>
+</body>
+</html>
