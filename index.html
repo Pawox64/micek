@@ -59,9 +59,11 @@
         }
         @media (max-width: 1250px) {
             .container {
-                flex-direction: column;
-                width: 90%;
-                align-items: center;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                width: auto;
+                margin: 0 auto;
             }
             .btn {
                 width: 150px;
